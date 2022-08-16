@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="first">
+    <input type="text" id="surname">
+    <input type="text" id="username">
+    <button onclick="submit()">Submit</button>
+    <table id="tab" style="border: 2px solid black" ;>
+        <tr style="border: 2px solid black" ;>
+            <th style="border: 1px solid black" ;>name</th>
+            <th style="border: 1px solid black" ;>surname</th>
+            <th style="border: 1px solid black" ;>Email</th>
+        </tr>
+    </table>
+</body>
+<script>
+    function submit() {
+       
+        var name1 = document.getElementById("first").value;
+        var name2 = document.getElementById("surname").value;
+        var name3 = document.getElementById("username").value;
+
+       
+        var taab = document.getElementById("tab");
+        var row = taab.insertRow(1);
+        var cel1 = row.insertCell(0);
+        var cel2 = row.insertCell(1);
+        var cel3 = row.insertCell(2);
+
+        
+
+        cel1.innerHTML = name1;
+        cel2.innerHTML = name2;
+        cel3.innerHTML = name3;
+       
+
+        var arr = [];
+        for (var i = 1; i < taab.rows.length; i++) {
+            var objCells = taab.rows.item(i).cells;
+            var f = objCells[0].innerHTML;
+            var l = objCells[1].innerHTML;
+            var e = objCells[2].innerHTML;
+            var obj = { name1: f, name2: l, name3: e };
+            arr.push(obj);
+        }
+        localStorage.setItem("local1", JSON.stringify(arr));
+        
+    }
+
+</script>
+
+</html>

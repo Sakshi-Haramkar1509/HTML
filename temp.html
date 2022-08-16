@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+</head>
+<style>
+    body {
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .v1  {
+        height: 100%;
+        width: 100%;
+    }
+
+    .T2 {
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 50px;
+        font-size: 20px;
+        text-decoration: none;
+        animation-name: sakshi;
+        animation-duration: 5s;
+        animation-iteration-count: 2100;
+        background-color: chocolate;
+
+    }
+
+    @keyframes sakshi {
+        form {
+            width: 10%;
+            height: 10px;
+        }
+
+        to {
+            width: 100%;
+            height: 10px;
+        }
+
+    }
+
+    .T2 a {
+        text-decoration: none;
+        color: white;
+        padding-left: 60px;
+        padding-top: 5px;
+        padding-right: 50px;
+        padding-bottom: 5px;
+
+    }
+
+    .move {
+        color: white;
+        font-size: 50px;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+
+    .name {
+        color: white;
+        font-size: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .first {
+        background-color: chocolate;
+        width: 100px;
+        height: 25px;
+        position: relative;        
+        left: 50px;
+        font-size: 15px;
+        border: none;
+
+    }
+
+    .first:hover {
+        background-color: white;
+    }
+
+    .form {
+        width: 250px;
+        height: 320px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+        position: relative;
+        top: 150px;
+        left: 900px;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .form h2 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: chocolate;
+        font-size: 22px;
+        background-color: white;
+        margin: 2px;
+        padding: 8px;
+    }
+
+    .form input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px soild chocolate;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+
+    .btn {
+        width: 240px;
+        height: 40px;
+        background: chocolate;
+        cursor: pointer;
+        color: white;
+
+
+    }
+
+    .btn:hover {
+        background: white;
+        color: chocolate;
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    .link {
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .box {
+        height: 30px;
+        width: 30px;
+        background-color: yellow;
+        animation-name: block;
+        animation-duration: 2s;
+        animation-iteration-count: 6100;
+    }
+
+    
+</style>
+
+<body>
+    
+    
+    
+    <div class="T2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Design</a>
+        <a href="#">Contact</a>
+        <input type="text" src="" alt="" placeholder="Type to Search">
+        <button type="Submit">Search</button>
+
+
+    </div>
+
+    <p class="move">
+        Web Design & <br>
+        Development <br>
+        Course
+    </p>
+    <p class="name">
+        Web Design is a specialization of the design stream. They also use html, <br>
+        Css, wysiwyg editing software, mark up validators etc, <br>
+        to create design elements.
+    </p>
+    <button class="first">JOIN US</button>
+    <div class="form">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder="Enter Email Here">
+        <input type="password" placeholder="Enter Password Here">
+        <button class="btn"><a href="#">Login</a></button>
+        <p class="link">
+            Don't have an account?<br>
+        
+            <a href="#">Sign up here</a>
+        </p><br>
+        Log in with
+        
+    </div>
+    <div class="box"></div>
+    
+
+
+
+
+</body>
+
+</html>

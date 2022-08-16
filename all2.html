@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        background-color: aqua;
+    }
+</style>
+<body>
+    <button type="button" id="btn" onclick="fn()">This is btn</button>
+    <button type="button" id="year" onclick="year()">New year</button>
+    <p id="print">this is para</p>
+    <p id="id1"></p>
+    <div class="2">
+        <p>Sakshi Haramkar </p>
+       
+    </div>
+</body>
+<script>
+
+    function year() {
+        var yr = []
+        var t=[]
+        for (var year = 2022; year <= 2050; year++) {
+            const d = new Date(year, 0, 1)
+            if (d.getDay() == 0) {
+                var looop;
+                for (looop = 0; looop <= yr.length; looop++) {
+                    yr.push(year)
+                    t.push(document.getElementById('id1').innerHTML = yr[looop])
+                    document.getElementById("id1").innerHTML="total sunday="+t;
+                }
+            }
+        }
+    }
+</script>
+</html> 

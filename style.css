@@ -1,0 +1,22 @@
+.fcontainer{
+    display: flex;
+    border: 2px solid red;
+    height: 45vh;
+     justify-content: space-around;
+}; */
+
+
+.fitem{
+    background-color: blue;
+    border: 2px solid aqua;
+    margin: 12px;
+    width: 120px;
+    height: 120px;
+}
+.item1{
+    order: 3;
+    align-self: center;
+}
+.item4{
+    order: 4;
+}
