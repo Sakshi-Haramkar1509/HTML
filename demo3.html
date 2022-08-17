@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        background-color: aqua;
+    }
+
+    #btn {
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <p>Superstar Rajinikanth, on July 24, was honoured by the Income Tax Department. He was 
+        recognised as the highest and most prompt tax payer in Tamil Nadu. <br>His daughter,
+         Aishwaryaa, received the award from Telangana Governor Tamilisai Soundararajan at an event on 
+         July 24. Rajinikanth is also the highest paid actor in Tamil Nadu for several years now.</p>
+    <center>
+    <button id="btn"> Click here</button>
+    <p id="hover"> Hover over the text!</p>
+    <b id="effect"> Mouse <br></b>
+</center>
+</body>
+<script>
+    const x = document.getElementById("btn");
+    const y = document.getElementById("hover");
+
+    x.addEventListener("click", RespondClick);
+    y.addEventListener("mouseover", RespondMouseOver);
+    y.addEventListener("mouseout", RespondMouseOut);
+
+    function RespondMouseOver() {
+        document.getElementById("effect").innerHTML += "Mouse Over Event" + "<br>";
+    }
+    function RespondMouseOut() {
+        document.getElementById("effect").innerHTML += "Mouse Out Event" + "<br>";
+    }
+    function RespondClick() {
+        document.getElementById("effect").innerHTML += "Click Event" + "<br>";
+    }
+</script>
+
+</html>
